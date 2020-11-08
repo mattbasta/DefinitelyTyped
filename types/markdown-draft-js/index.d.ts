@@ -46,6 +46,7 @@ export interface DraftToMarkdownOptions {
         };
     };
     preserveNewlines?: boolean;
+    escapeMarkdownCharacters?: boolean;
 }
 
 export function markdownToDraft(markdown: string, options?: MarkdownToDraftOptions): RawDraftContentState;
